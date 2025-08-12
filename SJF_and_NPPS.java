@@ -191,7 +191,8 @@ public class SJF_and_NPPS {
         System.out.println("DALE COFULAN KERCHATEN");
         System.out.println("CC22-1H: INTRODUCTION TO PLATFORM TECHNOLOGIES");
         System.out.println("FINAL PROJECT: MULTILEVEL QUEUE PROCESS SCHEDULING SIMULATOR");
-        System.out.println("- UPPER QUEUE: NPPS (NON-PREEMPTIVE PRIORITY SCHEDULING), PROCESSES WITH PRIORITY 5 OR HIGHER");
+        System.out.println("- UPPER QUEUE: NPPS (NON-PREEMPTIVE PRIORITY SCHEDULING)");
+        System.out.println("  (for processes with priority 5 or higher)");
         System.out.println("- LOWER QUEUE: SJF (SHORTEST JOB FIRST)");
         doubleLine();
 
