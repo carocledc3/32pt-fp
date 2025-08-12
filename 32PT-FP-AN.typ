@@ -1,7 +1,7 @@
 #import "@romeo/romeostyle:0.0.1": *
 #let colour-scheme = "bluegrey"
 #show: schooldoc.with(
-  author: ("Carlos Romeo Clemente Del Castillo III","Dale Kerchaten"),
+  author: ("Carlos Romeo Clemente Del Castillo III","Dale Cofulan Kerchaten"),
   section: "CC22-1H"+sub("A"),
   subject: "Introduction to Platform Technologies", 
   title: "Final Project: Analysis",
