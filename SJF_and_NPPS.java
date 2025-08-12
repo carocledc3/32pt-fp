@@ -176,8 +176,10 @@ public class SJF_and_NPPS {
     // AVERAGES
     static double averageOfIntAL(ArrayList<Integer> input) {
         double res = 0;
-        for (Integer i : input) { res += i / input.size();}
-        return res;
+        for (int i = 0; i < input.size(); i++) {
+            res += input.get(i);
+        }
+        return res / input.size();
     }
 
     // COMPUTATION OF AVERAGES
@@ -220,6 +222,7 @@ public class SJF_and_NPPS {
         [i] Example: "3, 5, 6"
         [i] For Priority 3, Arrival Time t=5, Burst Time 6.
         """);
+        line();
         for (int i = 1; i <= numProcesses; i++) {
         
         // STORE INPUT DECODE FAIL STATE
@@ -227,10 +230,7 @@ public class SJF_and_NPPS {
 
         // UNTIL INPUT IS VALID, LOOP
             do {
-            line();
-            System.out.printf("""
-            [[[ FOR PROCESS P%s ]]]
-            """, i);
+            System.out.printf("[ FOR PROCESS P%s ]", i);
             System.out.print(" >> ");
             inpnum = new Scanner(System.in);
             temp = inpnum.nextLine();
@@ -402,7 +402,6 @@ public class SJF_and_NPPS {
             );
         }
         line();
-        
         // PRINT AVERAGES
         System.out.printf("AVERAGE TURNAROUND TIME: %.2f units %n", averageOfIntAL(TATs));
         System.out.printf("AVERAGE WAITING TIME: %.2f units %n", averageOfIntAL(WTs));
