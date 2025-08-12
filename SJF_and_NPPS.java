@@ -191,7 +191,7 @@ public class SJF_and_NPPS {
         System.out.println("DALE COFULAN KERCHATEN");
         System.out.println("CC22-1H: INTRODUCTION TO PLATFORM TECHNOLOGIES");
         System.out.println("FINAL PROJECT: MULTILEVEL QUEUE PROCESS SCHEDULING SIMULATOR");
-        System.out.println("- UPPER QUEUE: NPPS (NON-PREEMPTIVE PRIORITY SCHEDULING)");
+        System.out.println("- UPPER QUEUE: NPPS (NON-PREEMPTIVE PRIORITY SCHEDULING), PROCESSES WITH PRIORITY 5 OR HIGHER");
         System.out.println("- LOWER QUEUE: SJF (SHORTEST JOB FIRST)");
         doubleLine();
 
@@ -392,6 +392,8 @@ public class SJF_and_NPPS {
         TAT == Turnaround Time
         WT == Waiting Time
         """);
+
+        // PRINT STATISTICS FOR EACH PROCESS
         for (Process i : doneProcesses) {
             System.out.printf(
                 "P%s -- Pri. %s -- AT %s -- BT %s -- EBT %s -- CT %s -- TAT %s -- WT %s%n",
@@ -399,6 +401,8 @@ public class SJF_and_NPPS {
             );
         }
         line();
+        
+        // PRINT AVERAGES
         System.out.printf("AVERAGE TURNAROUND TIME: %.2f units %n", averageOfIntAL(TATs));
         System.out.printf("AVERAGE WAITING TIME: %.2f units %n", averageOfIntAL(WTs));
     }
