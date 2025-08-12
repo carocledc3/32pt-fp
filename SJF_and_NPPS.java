@@ -1,3 +1,10 @@
+// CARLOS ROMEO CLEMENTE DEL CASTILLO III -- CC22-1H
+// DALE KERCHATEN -- CC22-1H
+// UNIVERSITY OF THE CORDILLERAS
+// CC22/INTRODUCTION TO PLATFORM TECHNOLOGIES
+// [32PT-FP] Final Project
+// 12 Aug. 2025 R
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -226,7 +233,8 @@ public class SJF_and_NPPS {
             System.out.print(" >> ");
             inpnum = new Scanner(System.in);
             temp = inpnum.nextLine();
-            } while ( intsDecoder(temp) == decodeFail );
+            } while ( intsDecoder(temp) == decodeFail || intsDecoder(temp).length != 3 || temp.endsWith(","));
+
         // ARRAY TO STORE CURRENT PROCESS INFO
         int[] rawPI = intsDecoder(temp);
         // NEW PROCESS
